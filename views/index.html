@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FMC Demo</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1>FMC Demo</h1>
+  <h2>Upload a Document</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <h3>Please select an agreement</h3>
+    <select name="agreements">
+      <option value="agreement1">******** ACTIVE AGREEMENTS ********</option>
+      <option value="agreement2">Agreement 1</option>
+      <option value="agreement3">Agreement 2</option>
+      <option value="agreement2">Agreement 3</option>
+      <option value="agreement3">Agreement 4</option>
+      <option value="agreement2">Agreement 5</option>
+      <option value="agreement3">Agreement 6</option>
+    </select>
+    <input type="file" name="document">
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>
